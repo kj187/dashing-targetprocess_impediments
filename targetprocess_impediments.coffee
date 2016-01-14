@@ -1,0 +1,13 @@
+class Dashing.TargetprocessImpediments extends Dashing.Widget
+
+  ready: ->
+    # This is fired when the widget is done being rendered
+    @onData(this)
+
+  onData: (data) ->
+    # Handle incoming data
+    widget = $(@node)
+    if data.value > 0
+      widget.css('background-color', 'rgb(193, 50, 50')
+    else
+      widget.css('background-color', 'rgb(0, 128, 0)')

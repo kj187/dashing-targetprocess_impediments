@@ -1,0 +1,24 @@
+.widget-targetprocess-impediments {
+  background-color: green;
+  cursor: default;
+
+  h1 {
+    font-weight: bold;
+    font-size: 36px;
+  }
+
+  .impediment-count {
+    font-weight: bold;
+    font-size: 120px;
+  }
+
+  .impediment-responsible {
+    height: 48px;
+
+    .item {
+      float: left;
+      margin-right: 4px;
+      margin-bottom: 4px;
+    }
+  }
+}
