@@ -44,7 +44,6 @@ try {
         .then(function(error, data) {
           if (error) return console.log('Error:', error)
           var responsibleUsers = [];
-          data.length = 0;
           if (data.length > 0) {
             responsibleUsers = getResponsibleUsers(data)
           }
