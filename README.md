@@ -1,4 +1,4 @@
-# TargetProcess sprint widget
+# TargetProcess impediment widget
 
 Author: [Julian Kleinhans](https://github.com/kj187) · Blog: [http://blog.kj187.de](http://blog.kj187.de)
 
