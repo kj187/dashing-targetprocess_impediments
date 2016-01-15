@@ -1,6 +1,6 @@
 
 var targetprocessApi = require('tp-api');
-var config = require("../config.targetprocess_impediments");
+var config = require("../config/config/.targetprocess_impediments");
 var cronJob = require('cron').CronJob;
 
 try {

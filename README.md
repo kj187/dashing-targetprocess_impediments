@@ -28,8 +28,22 @@ $ npm install cron
 ## Installation
 ```shell
 $ dashing-js install https://github.com/kj187/dashing-targetprocess_impediments/archive/master.zip
+``` 
+Create a new directory `config` on your root directory.
+Move the `widgets/targetprocess_impediments/config.targetprocess_impediments.sample.js` file to this directory and rename it to `config.targetprocess_impediments.js`.
+ 
 ```
-Move the `widgets/targetprocess_impediments/config.targetprocess_impediments.sample.js` file to the dashboard root directory and rename it to `config.targetprocess_impediments.js`. 
+assets/
+  ...
+config/
+  config.targetprocess_impediments.js
+  ...
+dashboards/
+  ...
+jobs/
+  ...
+...
+```
 
 ## Usage
 To include the widget on your dashboard, add the following snippet to the dashboard layout file:
