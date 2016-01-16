@@ -23,7 +23,7 @@ try {
     var responsibleUsers = [];
     var responsibleUserIds = [];
     data.forEach(function(entry) {
-      var userId = entry.Id;
+      var userId = entry.Responsible.Id;
       var userName = entry.Responsible.FirstName;
       var profileImageUrl = getProfileImage(userId);
       if (responsibleUserIds.indexOf(userId) < 0) {
