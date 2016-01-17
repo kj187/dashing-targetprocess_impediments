@@ -1,6 +1,7 @@
 .widget-targetprocess-impediments {
   background-color: green;
-  cursor: default;
+  vertical-align: top !important;
+  position:relative;
 
   h1 {
     font-weight: bold;
@@ -8,17 +9,42 @@
   }
 
   .impediment-count {
+    font-size: 110px;
     font-weight: bold;
-    font-size: 120px;
+  }
+
+  .impediment-responsible.list {
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:40px;
   }
 
   .impediment-responsible {
-    height: 48px;
+    height: 36px;
 
     .item {
-      float: left;
-      margin-right: 4px;
-      margin-bottom: 4px;
+      position:relative;
+      margin: 0 4px 0 0;
+
+      .count {
+        position:absolute;
+        left:3px;
+        right:0;
+        bottom:-38px;
+        margin-bottom: 5px;
+        background: #999;
+        border-radius: 1.5em;
+        -moz-border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        color: #ffffff;
+        display: inline-block;
+        font-weight: bold;
+        line-height: 1.6em;
+        margin-right: 5px;
+        text-align: center;
+        width: 1.6em;
+      }
     }
   }
 }

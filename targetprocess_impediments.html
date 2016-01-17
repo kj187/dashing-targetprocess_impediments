@@ -1,7 +1,8 @@
 <h1 data-bind="title"></h1>
 <div class="impediment-count" data-bind="value">0</div>
 <div class="impediment-responsible list">
-    <div data-foreach-user="responsibleUsers" class="impediment-responsible item">
-        <img data-bind-src="user.imgUrl" src="" data-bind-alt="user.name" data-bind-title="user.name" width="48" height="48"/>
-    </div>
+    <span data-foreach-user="responsibleUsers" class="impediment-responsible item">
+        <img data-bind-src="user.imgUrl" src="" data-bind-alt="user.name" data-bind-title="user.name" width="40" height="40"/>
+        <div data-bind="user.count" class="count">1</div>
+    </span>
 </div>
