@@ -7,7 +7,6 @@ try {
   var apiClient = targetprocessApi({
     domain: config.api.host,
     token: config.api.token,
-    acid: config.api.acid,
     version: config.api.version,
     protocol: config.api.protocol,
   });
@@ -41,6 +40,7 @@ try {
   new cronJob(config.cronInterval, function() {
     apiClient('Impediments')
         .where("EntityState.Name ne 'Resolved'")
+        .context(config.api.context)
         .then(function(error, data) {
           if (error) return console.log('Error:', error)
           var responsibleUsers = [];

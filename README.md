@@ -71,7 +71,7 @@ module.exports = {
 
     api: {
         host: 'www.host.com',
-        acid: '2439DD66D093095E290CF98FB987D4B7',
+        context: '2439DD66D093095E290CF98FB987D4B7',
         version: '1',
         protocol: 'https',
         token: 'bcdefabcdefabcdefgbcdefabcdefabcdefg'
@@ -98,7 +98,7 @@ module.exports = {
 | ------------- |----------------------| ---------------------------|
 | host     | www.host.com  | Host of your TargetProcess |
 | protocol     | https  | Http or https |
-| acid     | 2439DD66D093095E290CF98FB987D4B7 | ACID ID of the specific project from where you fetch the impediments count |
+| context     | 2439DD66D093095E290CF98FB987D4B7 | ACID ID of the specific project from where you fetch the impediments count |
 | version     | 1  | TargetProcess API version, dont change |
 | token     | bcdefabcdefabcdefgbcdefabcdefabcdefg  | TargetProcess API token |
 | username     | julian.kleinhans  | If you dont have an API token, you can also use your username/password. But I highly recommend to use an API token |
