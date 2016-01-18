@@ -12,6 +12,9 @@ Below this amount a profile image of the responsible persons are shown.
 ![Zero Impediments](http://res.cloudinary.com/kj187/image/upload/c_scale,w_250/v1453147089/dashing-targetprocess_impediments_zero_sjmuxb.png)
 ![Impediments](http://res.cloudinary.com/kj187/image/upload/c_scale,w_250/v1453146606/dashing-targetprocess_impediments.png)
 
+## Example Dashboard
+![Example](http://res.cloudinary.com/kj187/image/upload/v1453152816/dashboard_example_stb2dc.png)
+
 ## Requirements
 
 [Dashing-JS](https://github.com/fabiocaseri/dashing-js)
