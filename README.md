@@ -9,8 +9,11 @@ Below this amount a profile image of the responsible persons are shown.
  
 ## Preview 
 
-![Zero Impediments](http://res.cloudinary.com/kj187/image/upload/v1452805854/targetprocess_impediments_no_gaaaoj.png)
-![Three Impediments](http://res.cloudinary.com/kj187/image/upload/v1452805855/targetprocess_impediments_yes_djxeos.png)
+![Zero Impediments](http://res.cloudinary.com/kj187/image/upload/c_scale,w_250/v1453147089/dashing-targetprocess_impediments_zero_sjmuxb.png)
+![Impediments](http://res.cloudinary.com/kj187/image/upload/c_scale,w_250/v1453146606/dashing-targetprocess_impediments.png)
+
+## Example Dashboard
+![Example](http://res.cloudinary.com/kj187/image/upload/v1453152816/dashboard_example_stb2dc.png)
 
 ## Requirements
 
@@ -118,6 +121,7 @@ module.exports = {
 Do you know that I also created some other Dashing-JS widgets? Try out
 
 * [Jenkins Job widget](http://kj187.github.io/dashing-jenkins_job/)
+* [Meeting Reminder widget](http://kj187.github.io/dashing-reminder)
 * [GitHub PullRequest widget](http://kj187.github.io/dashing-github_pullrequests/)
 * [TargetProcess Impediments widget](http://kj187.github.io/dashing-targetprocess_impediments/)
 * [TargetProcess Sprint widget](http://kj187.github.io/dashing-targetprocess_sprint/)
