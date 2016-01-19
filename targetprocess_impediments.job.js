@@ -30,8 +30,15 @@ try {
         responsibleUsers.push({
           id: userId,
           name: userName,
-          imgUrl: profileImageUrl
+          imgUrl: profileImageUrl,
+          count: 1
         });
+      } else {
+          for (var i=0; i < responsibleUsers.length; i++) {
+            if (responsibleUsers[i].id == userId) {
+              responsibleUsers[i]['count'] = responsibleUsers[i]['count'] + 1;
+            }
+          }
       }
     });
     return responsibleUsers;
