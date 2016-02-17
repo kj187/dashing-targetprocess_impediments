@@ -2,7 +2,7 @@
 <div class="impediment-count" data-bind="value">0</div>
 <div class="impediment-responsible list">
     <span data-foreach-user="responsibleUsers" class="impediment-responsible item">
-        <img data-bind-src="user.imgUrl" src="" data-bind-alt="user.name" data-bind-title="user.name" width="40" height="40"/>
+        <img data-bind-src="user.imgUrl" src="" data-bind-alt="user.name" data-bind-title="user.name" data-bind-tpuserid="user.id" width="40" height="40"/>
         <div data-bind="user.count" class="count">1</div>
     </span>
 </div>
