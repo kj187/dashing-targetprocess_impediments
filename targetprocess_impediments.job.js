@@ -44,23 +44,26 @@ try {
     return responsibleUsers;
   };
 
-  new cronJob(config.cronInterval, function() {
+  var update = function() {
     apiClient('Impediments')
-        .where("EntityState.Name ne 'Resolved'")
-        .context(config.api.context)
-        .then(function(error, data) {
-          if (error) return console.log('Error:', error)
-          var responsibleUsers = [];
-          if (data.length > 0) {
-            responsibleUsers = getResponsibleUsers(data)
-          }
+      .where("EntityState.Name ne 'Resolved'")
+      .context(config.api.context)
+      .then(function(error, data) {
+        if (error) return console.log('Error:', error)
+        var responsibleUsers = [];
+        if (data.length > 0) {
+          responsibleUsers = getResponsibleUsers(data)
+        }
 
-          send_event(config.eventName, {
-            value: data.length,
-            responsibleUsers: responsibleUsers
-          })
-        });
-  }, null, true, null);
+        send_event(config.eventName, {
+          value: data.length,
+          responsibleUsers: responsibleUsers
+        })
+      });
+  };
+
+  new cronJob(config.cronInterval, update, null, true, null);
+  module.exports.update = update;
 
 } catch(error) {
   console.log('Exception:', error);
